@@ -9,7 +9,7 @@ response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
 # Find all listings
-listings = soup.find_all('div', class_='search-item')
+listings = soup.find_all('div', class_='search-item') # Something is wrong here
 
 # Extract price and year information
 for listing in listings:
